@@ -6,6 +6,8 @@ import NotesList from "./components/notesList";
 import NotesForm from "./components/notesForm";
 import NoteContext from "./context/noteContext";
 
+//i am adding a comment
+
 const App = () => {
   const [notes, noteDispatch] = useReducer(notesReducer, []);
 
@@ -23,7 +25,7 @@ const App = () => {
   });
 
   return (
-    <NoteContext.Provider value={{notes, noteDispatch}}>
+    <NoteContext.Provider value={{ notes, noteDispatch }}>
       <div>
         <h1>Notes</h1>
         <NotesList />
